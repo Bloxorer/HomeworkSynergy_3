@@ -67,12 +67,26 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/playbutton" />
 
-    <Button
-        android:id="@+id/Radio"
+    <SeekBar
+        android:id="@+id/progress"
+        android:layout_width="372dp"
+        android:layout_height="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stop"
+        app:layout_constraintVertical_bias="0.391" />
+
+    <TextView
+        android:id="@+id/seekBarHint"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Radio"
-        tools:layout_editor_absoluteX="181dp"
-        tools:layout_editor_absoluteY="676dp" />
+        android:layout_marginTop="10dp"
+        android:autoSizeTextType="uniform"
+        android:autoText="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progress" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
